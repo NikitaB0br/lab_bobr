@@ -3,7 +3,7 @@
 double num1, num2;
 char operation;
 
-Console.WriteLine("Простой консольный калькулятор");
+Console.WriteLine("Не простой консольный калькулятор");
 Console.WriteLine("Доступные операции: +, -, *, /");
 
 Console.Write("Введите первое число: ");
@@ -35,12 +35,13 @@ switch (operation)
         }
         else
         {
-            Console.WriteLine("Ошибка: Деление на ноль!");
+            Console.WriteLine("Ошибка: деление на ноль!");
+
             return;
         }
         break;
     default:
-        Console.WriteLine("Ошибка: Неверная операция!");
+        Console.WriteLine("Ошибка: неверная операция!");
         return;
 }
 
